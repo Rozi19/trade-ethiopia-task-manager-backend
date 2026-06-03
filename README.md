@@ -1,3 +1,50 @@
+# Task Manager Backend API
+
+This is the backend for the Task Manager app built using Node.js, Express, and MongoDB.
+
+## Features
+- User Registration & Login (JWT)
+- Create, Read, Update, Delete Tasks
+- MongoDB Database
+- Protected Routes
+
+## Tech Stack
+- Node.js
+- Express.js
+- MongoDB
+- JWT
+- Bcrypt
+- CORS
+
+## Setup
+
+### Install dependencies
+npm install
+
+### Create .env file
+PORT=5000
+MONGO_URI=your_mongodb_connection
+JWT_SECRET=your_secret_key
+
+### Run server
+npm start
+
+## API Routes
+
+Auth:
+POST /api/auth/register
+POST /api/auth/login
+
+Tasks:
+GET /api/tasks
+POST /api/tasks
+PUT /api/tasks/:id
+DELETE /api/tasks/:id
+
+## Deployment
+
+Backend deployed on Render
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
